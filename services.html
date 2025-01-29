@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Services</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f1f7; /* Light pink background */
+        color: #333;
+      }
+
+      header {
+        background-color: #ffcccb; /* Pastel red */
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 5px solid #ff8080; /* Brighter red border */
+      }
+      /* Navbar */
+      nav {
+        background-color: #4caf50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 20px;
+        background-color: #ffe6e6; /* Soft pink section background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #ff4d4d; /* Bright red */
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .service-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .service-item {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .service-item h3 {
+        color: #cc0066; /* Deep pink */
+        margin-bottom: 10px;
+      }
+
+      .service-item p {
+        font-size: 1em;
+        color: #666;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact-form label {
+        margin-bottom: 5px;
+        color: #cc0066; /* Deep pink */
+      }
+
+      .contact-form input,
+      .contact-form textarea,
+      .contact-form button {
+        margin-bottom: 15px;
+        padding: 10px;
+        border: 2px solid #cc0066;
+        border-radius: 5px;
+        font-size: 1em;
+      }
+
+      .contact-form button {
+        background-color: #ff4d88;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .contact-form button:hover {
+        background-color: #ff1a75;
+      }
+
+      footer {
+        background-color: #ffb3b3; /* Soft red */
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        border-top: 5px solid #ff6666;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        header {
+          padding: 15px;
+        }
+
+        h1 {
+          font-size: 2em;
+        }
+
+        main {
+          padding: 15px;
+        }
+
+        section {
+          padding: 15px;
+        }
+
+        .service-list {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form button {
+          font-size: 0.9em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Services</h1>
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
+        <h2>What I Offer</h2>
+        <p>
+          As a full-stack developer, I'm passionate about building websites and
+          applications that not only look great but also work seamlessly.
+          Whether you're launching a new project or improving an existing one,
+          I’m here to help you turn your ideas into a fully functional and
+          beautiful digital experience.
+        </p>
+      </section>
+
+      <section>
+        <h2>My Services</h2>
+        <div class="service-list">
+          <div class="service-item">
+            <h3>Front-End Web Development</h3>
+            <p>
+              I specialize in creating responsive, user-friendly websites that
+              are visually appealing and easy to navigate. Using HTML5, CSS3,
+              JavaScript, and frameworks like React and Angular, I build
+              interactive, dynamic user interfaces that ensure a smooth user
+              experience across all devices.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>Back-End Web Development</h3>
+            <p>
+              I create the behind-the-scenes systems that power your website.
+              Whether it’s using Node.js, Express, or connecting to databases
+              like MongoDB or MySQL, I build secure and efficient back-end
+              systems to ensure your website runs smoothly and is scalable as
+              your business grows.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>Full-Stack Development</h3>
+            <p>
+              As a full-stack developer, I offer end-to-end development
+              services. From crafting the perfect front-end interface to
+              creating the back-end infrastructure, I make sure your web
+              application functions flawlessly from start to finish.
+              Technologies like JavaScript, PHP, Python, and Ruby are at my
+              disposal to build everything you need.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>API Development & Integration</h3>
+            <p>
+              I design and develop custom APIs for seamless communication
+              between different applications and services. Whether you need to
+              integrate a third-party API or create your own, I ensure
+              everything works together seamlessly, from payment gateways to
+              social media integrations.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>Database Management</h3>
+            <p>
+              I handle everything related to databases—whether it’s setting up,
+              optimizing, or managing your data storage. Using both SQL (like
+              MySQL, PostgreSQL) and NoSQL (like MongoDB) databases, I make sure
+              your data is secure, easily accessible, and scalable to grow with
+              your business.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>Website Maintenance & Support</h3>
+            <p>
+              Websites need ongoing care, and I’m here to help! I offer website
+              maintenance and support, ensuring your site stays up-to-date with
+              the latest security patches, performance improvements, and bug
+              fixes. Let me handle the technical side so you can focus on your
+              business.
+            </p>
+          </div>
+
+          <div class="service-item">
+            <h3>SEO & Digital Marketing</h3>
+            <p>
+              A website is only as good as the people who can find it. I offer
+              SEO services to help you rank higher on search engines and drive
+              more traffic to your site. Additionally, I offer digital marketing
+              strategies to help you expand your online presence and reach your
+              target audience effectively.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Contact Me</h2>
+        <p>
+          Interested in working together or have a project in mind? I’d love to
+          hear from you! Fill out the form below to get in touch with me, and
+          I’ll respond as soon as possible to discuss how I can help bring your
+          vision to life.
+        </p>
+
+        <form
+          class="contact-form"
+          action="submit_service_inquiry.php"
+          method="post"
+        >
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="service">Service Interested In:</label>
+          <input
+            type="text"
+            id="service"
+            name="service"
+            placeholder="e.g., Full Stack Development"
+            required
+          />
+
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Kam Mnyamana. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

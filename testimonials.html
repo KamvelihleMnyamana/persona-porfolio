@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials | Kamvelihle Mnyamana</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      .testimonials {
+        text-align: center;
+        padding: 20px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+        color: #333;
+      }
+
+      header p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      /* Navbar */
+      nav {
+        background-color: #4caf50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      .testimonial-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .testimonial-card {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        padding: 20px;
+        text-align: left;
+      }
+
+      .client-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+      }
+
+      blockquote {
+        font-style: italic;
+        color: #555;
+        margin: 10px 0;
+      }
+
+      .client-name {
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+      }
+
+      footer .back-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+        background: #007bff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+      }
+
+      footer .back-btn:hover {
+        background-color: #0056b3;
+      }
+
+      /* Container for the testimonials */
+#testimonials {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+#testimonials:hover {
+  background-color: #f1f1f1;
+}
+
+/* Title styling */
+h2 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling the form */
+#testimonial-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#testimonial-form input,
+#testimonial-form textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#testimonial-form input:focus,
+#testimonial-form textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+#testimonial-form button {
+  padding: 12px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#testimonial-form button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Star rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+/* Star rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.star-rating label {
+  font-size: 30px;
+  color: #000; /* Light gray for unselected stars */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.star-rating input:checked ~ label {
+  color: gold; /* Gold for selected stars */
+}
+
+/* Highlight stars on hover */
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffcc00; /* Highlight stars on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Maintain the gold color when a star is checked */
+.star-rating input:checked + label,
+.star-rating input:checked + label + label,
+.star-rating input:checked + label + label + label,
+.star-rating input:checked + label + label + label + label,
+.star-rating input:checked + label + label + label + label + label {
+  color: gold;
+}
+
+
+/* Optional: Focus effect */
+.star-rating label:focus {
+  outline: none; /* Remove focus outline */
+  color: #ffcc00; /* Optional: Keep the star highlighted when focused */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Styling for testimonials display */
+#testimonial-list {
+  margin-top: 20px;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-5px); /* Lift the testimonial on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Text styling */
+.testimonial-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+.testimonial-item strong {
+  font-size: 18px;
+  color: #333;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  #testimonials {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  #testimonial-form input,
+  #testimonial-form textarea {
+    font-size: 14px;
+  }
+
+  #testimonial-form button {
+    font-size: 14px;
+  }
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="testimonials">
+      <header>
+        <h1>What People Are Saying About Me</h1>
+        <p>Here’s what some of my clients and collaborators have to say:</p>
+      </header>
+
+      <!-- Navbar -->
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <section id="testimonials">
+        <h2>Customer Testimonials</h2>
+      
+        <!-- Form for new testimonial -->
+        <form id="testimonial-form">
+          <input type="text" id="name" placeholder="Your Name" required />
+          
+          <!-- Star rating system -->
+          <div class="star-rating">
+            <label>
+              <input type="radio" name="rating" value="1" />&#9733;
+            </label>
+            <label>
+              <input type="radio" name="rating" value="2" />&#9733;
+            </label>
+            <label>
+              <input type="radio" name="rating" value="3" />&#9733;
+            </label>
+            <label>
+              <input type="radio" name="rating" value="4" />&#9733;
+            </label>
+            <label>
+              <input type="radio" name="rating" value="5" />&#9733;
+            </label>
+          </div>
+      
+          <textarea id="testimonial-text" placeholder="Your Testimonial" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      
+        <h3>Previous Testimonials</h3>
+        <div id="testimonial-list"></div>
+      </section>
+      <footer>
+        <p>Designed with ❤️ by Kam Mnyamana.</p>
+        <a href="index.html" class="back-btn">Back to Home</a>
+      </footer>
+    </div>
+    <script src="testimonials.js"></script>
+  </body>
+</html>

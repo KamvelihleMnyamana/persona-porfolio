@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kam Mnyamana | Full Stack Developer</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+      }
+
+      header {
+        background-color: #4caf50; /* Green */
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+      /* Navbar */
+      nav {
+        background-color: #4caf50; /* Green */
+        color: white;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      nav ul li a:hover {
+        text-decoration: underline;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+
+      section {
+        padding: 20px;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .card {
+        background-color: white;
+        width: 30%;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+
+      .card-content {
+        padding: 15px;
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .card p {
+        line-height: 1.6;
+      }
+
+      footer {
+        background-color: #4caf50; /* Green */
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      footer p {
+        margin: 0;
+      }
+
+      .contact-btn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 10px;
+      }
+
+      .contact-btn:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Kamvelihle Mnyamana | Full Stack Developer</h1>
+    </header>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="container">
+        <div class="card">
+          <h3>Project 1</h3>
+          <p>Age calculator. Developed using HTML, CSS, and JavaScript.</p>
+          <a
+            href="#"
+            onclick="alert('This project is currently not hosted online.')"
+            title="Project not hosted"
+            >View Project</a
+          >
+        </div>
+        <div class="card">
+          <h3>Project 2</h3>
+          <p>
+            A business website for a cosmetic brand. Built using HTML and CSS.
+          </p>
+          <a
+            href="#"
+            onclick="alert('This project is currently not hosted online.')"
+            title="Project not hosted"
+            >View Project</a
+          >
+        </div>
+        <div class="card">
+          <h3>Project 3</h3>
+          <p>
+            A business website. Built using WordPress and custom plugins for
+            enhanced functionality.
+          </p>
+          <a
+            href="#"
+            onclick="alert('This project is currently not hosted online.')"
+            title="Project not hosted"
+            >View Project</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Designed with ❤️ by Kam Mnyamana.</p>
+    </footer>
+  </body>
+</html>
