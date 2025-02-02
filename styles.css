@@ -1,17 +1,9 @@
 .profile-img {
- object-fit: cover;
-  width: 100%;
-  height: auto;
-  border-radius: 6px;
-}
-body {
-  font-family: Arial, sans-serif;
- font-size: 16px;
-  margin: 20px;
-  padding: 0;
-  background-color: #f9f1f7; /* Light pink background */
-  color: #333;
-}
+  object-fit: cover;
+   width: 100%;
+   height: auto;
+   border-radius: 6px;
+ }
 
  /* Navbar */
  nav {
@@ -41,66 +33,95 @@ body {
  }
  
  nav ul li a:hover {
-  background-color: #555;
+  background-color: ;
    text-decoration: underline;
  }
 
-section {
-  padding: 60px 20px;
-  text-align: center;
-}
+ 
+ header {
+   background-color: #ffcccb; /* Pastel red */
+   color: white;
+   padding: 20px 0;
+   text-align: center;
+ }
+ 
+ header h1 {
+   margin: 0;
+   font-size: 2.5em;
+ }
+ 
+ .container {
+   width: 80%;
+   margin: 0 auto;
+ }
+ 
+ .card {
+   background-color: white;
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   margin-bottom: 20px;
+ }
+ 
+ footer {
+   background-color: #4CAF50;
+   color: white;
+   text-align: center;
+   padding: 10px 0;
+ }
+ 
+ footer p {
+   margin: 0;
+ }
+ 
+ .contact-btn {
+   background-color: #4CAF50;
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 5px;
+   display: inline-block;
+   margin-top: 10px;
+ }
+ 
+ .contact-btn:hover {
+   background-color: #45a049;
+ }
 
-header {
-  background-color: #ffcccb; /* Pastel red */
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-footer {
-  background-color: #4CAF50;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
-footer p {
-  margin: 0;
-}
-
-.contact-btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.contact-btn:hover {
-  background-color: #45a049;
-}
-@media(max-width:768px){
- body{
-  font-size: 14px;
-  margin: 10px;
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0; /* Remove the extra margin */
+    padding: 0;
+    background-color: #f9f1f7;
+    color: #333;
+ }
+ 
+ .container {
+    width: 90%; /* Make it more responsive */
+    max-width: 1200px; /* Limit max width for larger screens */
+    margin: 0 auto;
+    padding: 10px; /* Add padding to prevent edge-cutting */
+ }
+ 
+ @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 0; /* Ensure no unwanted margins */
+        padding: 0;
+    }
+ 
+    .container {
+        width: 95%; /* Adjust for better fit on smaller screens */
+        padding: 5px;
+    }
+ 
+    section {
+        padding: 30px 10px; /* Reduce excessive space */
+    }
+ 
+    .card {
+        margin-bottom: 10px; /* Reduce space between cards */
+        padding: 10px; /* Adjust padding */
+    }
  }
