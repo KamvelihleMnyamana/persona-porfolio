@@ -318,7 +318,7 @@ nav ul li a:hover {
             type="text"
             id="service"
             name="service"
-            placeholder="e.g., Full Stack Development"
+            placeholder="e.g., Website Development"
             required
           />
 
@@ -340,5 +340,17 @@ nav ul li a:hover {
       <a href="index.html" class="back-btn">Back to Home</a>
       <p>&copy; 2025 Kam Mnyamana. All rights reserved.</p>
     </footer>
+<script>
+document.querySelector(".contact-form").addEventListener("submit", function (event) {
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
+
+    if (!name || !email || !message) {
+        event.preventDefault();
+        alert("Please fill in all required fields.");
+    }
+});
+</script>
   </body>
 </html>
