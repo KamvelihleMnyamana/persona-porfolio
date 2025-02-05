@@ -111,3 +111,57 @@ footer a {
   color: white;
   text-decoration: underline;
 }
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+    gap: 15px; /* Space between buttons */
+    margin-top: 20px;
+}
+
+.contact-button {
+    display: inline-block;
+    text-align: center;
+    background-color: #ff4d94; /* Default button color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+    width: 200px; /* Ensures buttons are the same size */
+}
+
+/* Hover effect */
+.contact-button:hover {
+    opacity: 0.8;
+}
+
+/* WhatsApp button */
+.whatsapp {
+    background-color: #25D366;
+}
+
+.whatsapp:hover {
+    background-color: #1da851;
+}
+
+/* Email button */
+.email {
+    background-color: #007bff;
+}
+
+.email:hover {
+    background-color: #0056b3;
+}
+
+/* Address button */
+.address {
+    background-color: #ff9800;
+}
+
+.address:hover {
+    background-color: #e68900;
+}
