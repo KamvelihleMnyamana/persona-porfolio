@@ -121,29 +121,29 @@ nav ul li a:hover {
 
 .contact-buttons {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+    gap: 15px; /* Space between buttons */
     margin-top: 20px;
 }
 
 .contact-button {
     display: inline-block;
-    width: 200px;
     text-align: center;
     background-color: #ff4d94; /* Default button color */
     color: white;
-    padding: 12px;
+    padding: 12px 20px;
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 8px;
     transition: background 0.3s;
+    width: 200px; /* Ensures buttons are the same size */
 }
 
+/* Hover effect */
 .contact-button:hover {
-    background-color: #ff1a75; /* Darker shade for hover effect */
+    opacity: 0.8;
 }
 
 /* WhatsApp button */
@@ -272,7 +272,7 @@ nav ul li a:hover {
         </form>
       </section>
 
-     <div class="contact-buttons">
+  <div class="contact-buttons">
     <!-- WhatsApp Button -->
     <a href="https://wa.me/27744872877" target="_blank" class="contact-button whatsapp">
         WhatsApp Me
@@ -283,12 +283,13 @@ nav ul li a:hover {
         Email Me
     </a>
 
-    <!-- Address Button (Opens in Google Maps) -->
+    <!-- Address Button -->
     <a href="https://www.google.com/maps/search/?api=1&query=Butterworth,+Eastern+Cape+4962,+South+Africa" 
        target="_blank" class="contact-button address">
         View Address
     </a>
 </div>
+
     <footer>
       <a href="index.html" class="back-btn">Back to Home</a>
       <p>&copy; 2025 Kam Mnyamana. All rights reserved.</p>
