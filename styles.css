@@ -90,13 +90,6 @@ p {
   color: #ddd; /* Light gray */
 }
 
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
 /* Footer */
 footer {
   background: #333;
