@@ -1,16 +1,16 @@
 /* General Styles */
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  line-height: 1.8;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #000; /* Black background */
+  background-color: #555;
   color: #fff; /* White text */
 }
 
 /* Header */
 header {
-  background: #333; /* Dark gray */
+  background: #1da851; 
   color: white;
   padding: 2rem;
   text-align: center;
@@ -29,7 +29,7 @@ header p {
 
 /* Navbar */
 nav {
-  background-color: #222; /* Almost black */
+  background-color: #25D366; 
   color: white;
   display: flex;
   justify-content: space-between;
