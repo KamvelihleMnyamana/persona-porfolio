@@ -234,43 +234,21 @@ nav ul li a:hover {
 
       <section>
         <h2>Contact Form</h2>
-        <form
-          action="submit_contact.php"
-          method="post"
-          aria-labelledby="contactForm"
-        >
-          <label for="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-            aria-required="true"
-          />
+        <form action="service_inquiry.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-            aria-required="true"
-          />
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-          <label for="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-            aria-required="true"
-          ></textarea>
+    <label for="service">Service:</label>
+    <input type="text" id="service" name="service" required>
 
-          <button type="submit">Submit</button>
-        </form>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+
+    <button type="submit" name="submit">Send</button>
+</form>
       </section>
 
   <div class="contact-buttons">
