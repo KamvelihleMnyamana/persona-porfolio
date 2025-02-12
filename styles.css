@@ -80,6 +80,13 @@ nav ul li a:hover {
   background-color: #555;
   text-decoration: underline;
 }
+@media (max-width:768px) {
+ nav ul{
+  flex-wrap: wrap; /* allows items to break onto a new row if need to */
+ }
+ nav ul li a {
+  font-size: 14px;
+  padding: 8px 12px;
 
 /* Main Content */
 main {
