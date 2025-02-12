@@ -1,11 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $service = $_POST['service'];
-    $message = $_POST['message'];
+    $name = $_POST['name'] ?? '';
+    $email = $_POST['email'] ?? '';
+    $service = $_POST['service'] ?? '';
+    $message = $_POST['message'] ?? '';
 
-    // Email where form submissions should go
     $to = "contact@kammnyamana.com";
     $subject = "New Service Inquiry from $name";
     $body = "Name: $name\nEmail: $email\nService: $service\nMessage:\n$message";
