@@ -61,7 +61,7 @@ nav ul {
   display: flex;
  justify-content: center;
  gap: 10px;
- overflow:hidden
+ overflow:hidden;
  flex-wrap: wrap;
 }
 
