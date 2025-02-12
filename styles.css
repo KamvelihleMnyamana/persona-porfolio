@@ -59,6 +59,10 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
+ justify-content: center;
+ gap: 10px;
+ overflow:hidden
+ flex-wrap: wrap;
 }
 
 nav ul li {
