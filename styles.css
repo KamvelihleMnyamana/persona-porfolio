@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f8f1f7;
-  color: #fff; /* White text */
+  color: #333; /* Neutra text color */
 }
 
 /* Header */
@@ -14,7 +14,7 @@ header {
   color: white;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
 }
 
 header h1 {
