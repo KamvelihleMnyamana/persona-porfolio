@@ -4,13 +4,13 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #008080;
+  background-color: #f8f1f7;
   color: #fff; /* White text */
 }
 
 /* Header */
 header {
-  background: #ff851b; 
+  background: #ff99cc; 
   color: white;
   padding: 2rem;
   text-align: center;
